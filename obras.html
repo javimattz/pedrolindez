@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>Pedro Lindez</title>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="nav">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/logo.jpg" />
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-menu">
+                    <li><a href="./obras.html">Obras</a></li>
+                    <li><a href="./trayectoria.html">Trayectoria</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="obras-container">
+            
+            <div class="pics-navbar">
+                <ul>
+                    <li><a id="link-obras-metal" href="#" onclick="showGrid(this)">Metal</a> /</li>
+                    <li><a id="link-obras-madera" href="#" onclick="showGrid(this)">Madera</a> /</li>
+                    <li><a id="link-obras-papel" href="#" onclick="showGrid(this)">Papel</a> /</li>
+                    <li><a id="link-obras-digital" href="#" onclick="showGrid(this)">Digital</a> /</li>
+                    <li><a id="link-obras-otros" href="#" onclick="showGrid(this)">Otros</a></li>
+                </ul>
+    
+            </div>
+
+            <div class="obras-grid">
+                
+                <!-- Single View -->
+                <div id="single-view" class="zi-neg v-hidden">
+                    <div class="close" onclick="closeSingleView()">X</div>
+                    <h1 class="single-view-info">Untitled #12 / <span class="light-font">33x45cm</span></h1>
+                    <div class="single-img">
+                        <img id="single-view-img" src="img/obras/digital/digital-2.jpg" />
+                    </div>
+                </div>
+                
+                <!------ Obras Metal ------>
+                <div id="obras-metal" class="d-block">
+                    <div class="fila-grid">
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-04.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-05.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-06.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-07.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-08.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-01b.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-02b.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/metal-03b.jpg" /></div>
+                        <div onclick="showSingleView(this)" ><img src="./img/obras/metal/Imagen-05.jpg" /></div>
+                    </div>
+                </div>
+
+                <!------ Obras Madera ------>
+                <div id="obras-madera" class="d-none">
+                    <div class="fila-grid">
+                        <div onclick="showSingleView(this)"><img src="./img/obras/madera/madera-1.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/madera/madera-2.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/madera/madera-3.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/madera/madera-4.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/madera/madera-5.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/madera/madera-6b.jpg" /></div>
+                    </div>
+                </div>
+
+                <!------ Obras Papel ------>
+                <div id="obras-papel" class="d-none">
+                    <div class="fila-grid">
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-1b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-2b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-3b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-4b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-5b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-7.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-8.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/papel/papel-9.jpg" /></div>
+                    </div>
+                </div>
+
+                <!------ Obras Digital ------>
+                <div id="obras-digital" class="d-none">
+                    <div class="fila-grid">
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-1b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-7.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-3b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-4.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-5.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-6.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-2b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-8.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/digital/digital-9.jpg" /></div>
+                    </div>
+                </div>
+
+                <!------ Obras Otros Materiales ------>
+                <div id="obras-otros" class="d-none">
+                    <div class="fila-grid">
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-1b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-2.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-3.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-4a.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-5b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-6b.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-8.jpg" /></div>
+                        <div onclick="showSingleView(this)"><img src="./img/obras/otros/otros-9.jpg" /></div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+        </div>
+
+
+        <footer>
+            <p>pedrolíndez © 2024</p>
+        </footer>
+        
+    </div>
+
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

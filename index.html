@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Lindez</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Css -->
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav class="nav">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="img/logo.jpg" />
+                </a>
+            </div>
+            <div class="nav-bar">
+                <ul class="nav-menu">
+                    <li><a href="./obras.html">Obras</a></li>
+                    <li><a href="./trayectoria.html">Trayectoria</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="texto-presentacion-1">
+            <p>
+                Veinticinco años de artista en los lenguajes de vanguardia, como el minimalismo, el arte conceptual o el expresionismo abstracto. 
+            </p>
+            
+            <p>
+                Pionero y premiado en pintura digital o en escultura… 
+                Protagonista de numerosas exposiciones individuales y colectivas, dentro y fuera de nuestro país…
+            </p>
+        </div>
+
+        <div class="foto-perfil">
+            <img src="img/inicio/pedro.jpg" />
+        </div>
+
+        <div class="texto-presentacion-2">
+            <p>
+            “En mi mundo conviven y se mezclan los áridos paisajes de mi infancia granadina, la libertad del niño que crece y crea su propio mundo en un ambiente rural, 
+            casi espartano, y la necesidad de seguir ordenando el mundo que nos rodea con los materiales más humildes, inservibles, usados, de desecho… 
+            para interpelarnos como sociedad frente al presente, pero también frente al futuro y los retos que nos plantea…”
+            </p>
+        </div>
+        <div>
+            <div class="lista-obras">
+            
+                <div id="obra-inicio-1" class="obra" onclick="showImage(this)">
+                    <img src="img/inicio/obra-inicio-1-web.jpg" />
+                </div>
+        
+                <div id="obra-inicio-2" class="obra" onclick="showImage(this)">
+                    <img id="obra-2" src="img/inicio/obra-inicio-2-web.jpg" />
+                </div>
+        
+                <div id="obra-inicio-3" class="obra" onclick="showImage(this)">
+                    <img src="img/inicio/obra-inicio-3-web.jpg" />
+                </div>
+        
+                <div id="obra-inicio-4" class="obra" onclick="showImage(this)">
+                    <img src="img/inicio/obra-inicio-4-web.jpg" />
+                </div>
+            </div>
+            
+            <div class="obra-grande">
+                <img id="big-image" src="img/inicio/obra-inicio-1-web.jpg" />
+            </div>
+        </div>
+        
+        <footer>
+            <p>pedrolíndez © 2024</p>
+        </footer>
+    </div>
+
+    <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

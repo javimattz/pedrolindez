@@ -1,0 +1,408 @@
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 20%;
+}
+
+
+/****************************    Navbar    ****************************/
+
+.nav-bar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+} 
+
+.nav-menu {
+    display: inline;
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.nav-menu li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    color: #AAA;
+}
+
+
+/****************************    Footer    ****************************/
+
+footer {
+    padding: 50px 0;
+}
+
+
+/****************************    index.html    ****************************/
+
+.texto-presentacion-1 {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.texto-presentacion-1 p {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 10px 20px;
+}
+
+.texto-presentacion-2 {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 90%;
+}
+
+.texto-presentacion-2 p {
+    font-size: 22px;
+    text-align: left;
+    padding: 30px 10px;
+}
+
+.foto-perfil img {
+    width: 100%;
+}
+
+.obra-grande {
+    display: none;
+}
+
+.lista-obras {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.lista-obras .obra {
+    display: block;
+    margin-top: 40px;
+}
+
+.lista-obras img {
+    cursor: pointer;
+    width: 100%;
+}
+
+/******* Media Queries *******/
+
+@media (min-width: 1400px) {
+    
+    .texto-presentacion-1 {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .texto-presentacion-1 p {
+        font-size: 24px;
+        text-align: left;
+        padding: 30px 10px;
+    }
+
+    .texto-presentacion-2 {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 80%;
+    }
+
+    .texto-presentacion-2 p {
+        font-size: 24px;
+        text-align: left;
+        padding: 30px 10px;
+    }
+
+    .foto-perfil img {
+        width: 80%;
+    }
+
+    .obra img {
+        width: 80%;
+    }
+
+    .lista-obras {
+        width: 97%;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .lista-obras .obra {
+        display: inline;
+    }
+
+    .lista-obras img {
+        cursor: pointer;
+        height: 200px;
+        width: 20%;
+    }
+
+    .obra-grande {
+        display: inherit;
+    }
+
+    .obra-grande img {
+        width: 78%;
+    }
+}
+
+
+/****************************    trayectoria.html    ****************************/
+
+.trayectoria {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.fotos {
+    display: flex;
+    align-items: start;
+    padding: 50px 0;
+}
+
+.fotos .foto-pedro {
+    max-height: 350px;
+    padding-right: 30px;
+}
+
+.expo-individuales, .expo-colectivas, .premios {
+    text-align: left;    
+    margin-bottom: 50px;
+}
+
+.trayectoria h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.trayectoria h2 {
+    font-size: 22px;
+}
+
+.trayectoria p {
+    font-size: 18px;
+}
+
+/******* Media Queries *******/
+
+@media (min-width: 1900px) {
+
+    .trayectoria {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .fotos {
+        display: flex;
+        align-items: start;
+        padding: 50px 0 20px;
+    }
+
+    .fotos .foto-pedro {
+        max-height: 350px;
+        padding-right: 30px;
+    }
+
+    .expo-individuales, .expo-colectivas, .premios {
+        text-align: left;    
+        margin-bottom: 50px;
+    }
+
+    .trayectoria h1 {
+        font-size: 32px;
+        padding-bottom: 20px;
+    }
+
+    .trayectoria h2 {
+        font-size: 24px;
+    }
+
+    .trayectoria p {
+        font-size: 22px;
+    }
+}
+
+/****************************    eventos.html    ****************************/
+
+.eventos {
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: left;
+    width: 100%;
+}
+
+.eventos h1 {
+    padding-bottom: 20px;
+}
+
+.eventos img {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/******* Media Queries *******/
+
+@media (min-width: 1900px) {
+    
+    .eventos {
+        margin: 0 auto;
+        padding-top: 40px;
+        text-align: left;
+        width: 70%;
+    }
+    
+    .eventos h1 {
+        padding-bottom: 20px;
+    }
+    
+    .fila-eventos {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 80px;
+    }
+    
+    .lista-eventos img {
+        height: 400px;
+        margin-right: 100px;
+    }
+    
+    .fila-eventos .doble {
+        height: 300px;
+    }
+    
+    .fila-eventos .triptico {
+        height: 300px;
+    }
+    
+    .titulo-prensa {
+        margin-bottom: 0;
+        padding-top: 30px;
+    }
+    
+    .fila-prensa {
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 40px;
+    }
+    
+    .lista-prensa img {
+        height: 500px;
+    }    
+}
+
+
+/****************************    contacto.html    ****************************/
+
+.contact-page {
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+@media (min-width: 1900px) {
+
+    .contact-page {
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    .contact-pics {
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 0 80px;
+    }
+    
+    .form-text {
+        margin-bottom: 50px;
+    }
+    
+    .contact-pics img {
+        height: 300px;
+    }
+    
+    .contact-form {
+        text-align: left;
+    }
+    
+    .contact-form label {
+        font-weight: bold;
+    }
+    
+    .contact-form input {
+        font-size: 18px;
+        padding: 5px;
+        width: 50%;
+    }
+    
+    .form-name, .form-email {
+        margin-bottom: 30px;
+    }
+    
+    #message {
+        font-size: 18px;
+        height: 200px;
+        width: 80%;
+    }
+
+}
+
+
+
+/****************************    obras.html    ****************************/
+
+
+.obras-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.pics-navbar ul {
+    list-style: none;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.pics-navbar ul li {
+    display: inline;
+}
+
+.pics-navbar ul li a {
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.fila-grid {
+    display: flex;
+}
+
+.fila-grid img {
+    justify-content: space-between;
+    max-width: 80%;
+}
+
+.v-visible {
+    visibility: visible;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
